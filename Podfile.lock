@@ -1,0 +1,33 @@
+PODS:
+  - FBSDKCoreKit (7.1.1):
+    - FBSDKCoreKit/Basics (= 7.1.1)
+    - FBSDKCoreKit/Core (= 7.1.1)
+  - FBSDKCoreKit/Basics (7.1.1)
+  - FBSDKCoreKit/Core (7.1.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKShareKit (7.1.1):
+    - FBSDKShareKit/Share (= 7.1.1)
+  - FBSDKShareKit/Share (7.1.1):
+    - FBSDKCoreKit (~> 7.1.1)
+  - NVActivityIndicatorView (5.0.0):
+    - NVActivityIndicatorView/Base (= 5.0.0)
+  - NVActivityIndicatorView/Base (5.0.0)
+
+DEPENDENCIES:
+  - FBSDKShareKit
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  trunk:
+    - FBSDKCoreKit
+    - FBSDKShareKit
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
+  FBSDKShareKit: 00a055c1999b099596e00212dd1c0600c6697019
+  NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
+
+PODFILE CHECKSUM: 17e3702842f080ff62f6b180432997c60424bd21
+
+COCOAPODS: 1.9.1

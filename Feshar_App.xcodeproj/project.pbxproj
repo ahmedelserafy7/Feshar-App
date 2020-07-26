@@ -1,0 +1,1359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA81DC423410CD2486AD038 /* Pods_Feshar_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F281E54DA05F4BD96EF635F /* Pods_Feshar_AppTests.framework */; };
+		1602EA772434D86A00E69705 /* WatchlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602EA762434D86A00E69705 /* WatchlistTableViewCell.swift */; };
+		1602EA7D2439200A00E69705 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602EA7C2439200A00E69705 /* FeaturedViewController.swift */; };
+		1602EA7F2439257900E69705 /* FeaturedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602EA7E2439257900E69705 /* FeaturedCell.swift */; };
+		1602EA812439265300E69705 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602EA802439265300E69705 /* MovieCell.swift */; };
+		1604F70824BE0FCC002A6C7D /* DeleteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604F70724BE0FCC002A6C7D /* DeleteSession.swift */; };
+		1604F70A24BE123A002A6C7D /* SessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604F70924BE123A002A6C7D /* SessionRequest.swift */; };
+		160D718024BB59CE00D7A646 /* BaseFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D717F24BB59CE00D7A646 /* BaseFeedCell.swift */; };
+		160DFF0824310FC9004A4D64 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160DFF0724310FC9004A4D64 /* DetailsViewController.swift */; };
+		1613627724536F4400636DE9 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1613627624536F4400636DE9 /* MenuBarView.swift */; };
+		1613627B2454AECA00636DE9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1613627A2454AECA00636DE9 /* Service.swift */; };
+		16147DED2440C115006F6E7A /* WatchlistDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16147DEC2440C115006F6E7A /* WatchlistDetailsResponse.swift */; };
+		16147DF12442042C006F6E7A /* WatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16147DF02442042C006F6E7A /* WatchlistRequest.swift */; };
+		16147DF324420884006F6E7A /* WatchlistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16147DF224420884006F6E7A /* WatchlistResponse.swift */; };
+		16195BAF243B5EA300968035 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BAE243B5EA300968035 /* ProfileViewController.swift */; };
+		16195BB1243B5F4000968035 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BB0243B5F4000968035 /* ProfileCell.swift */; };
+		16195BB5243CF4EE00968035 /* Cache+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BB4243CF4EE00968035 /* Cache+helper.swift */; };
+		16195BB9243E689100968035 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BB8243E689100968035 /* LoginRequest.swift */; };
+		16195BBB243E71AB00968035 /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BBA243E71AB00968035 /* RequestTokenResponse.swift */; };
+		16195BBD243EB49E00968035 /* MovieDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BBC243EB49E00968035 /* MovieDetailsResponse.swift */; };
+		16195BBF24408A0400968035 /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16195BBE24408A0400968035 /* SessionResponse.swift */; };
+		161A918824CA60F000B22D08 /* FindMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A918724CA60F000B22D08 /* FindMovie.swift */; };
+		161A919624CA7D4E00B22D08 /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A919524CA7D4E00B22D08 /* LogOut.swift */; };
+		161A919924CA85C000B22D08 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A919824CA85C000B22D08 /* MovieDetails.swift */; };
+		161A919C24CAA92400B22D08 /* LoginViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A919B24CAA92400B22D08 /* LoginViewController+Extensions.swift */; };
+		161A91A224CAD08900B22D08 /* HomeViewController+CellCheckExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A91A124CAD08900B22D08 /* HomeViewController+CellCheckExtensions.swift */; };
+		161A91A524CAD20400B22D08 /* HomeViewController+RegisterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A91A424CAD20400B22D08 /* HomeViewController+RegisterExtensions.swift */; };
+		161A91A824CB80DB00B22D08 /* DetailsViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A91A724CB80DB00B22D08 /* DetailsViewController+Extensions.swift */; };
+		161CF6FD244A3456003755D0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161CF6FC244A3456003755D0 /* Session.swift */; };
+		16219F372428BBA2007331F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16219F362428BBA2007331F8 /* AppDelegate.swift */; };
+		16219F392428BBA2007331F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16219F382428BBA2007331F8 /* SceneDelegate.swift */; };
+		16219F3E2428BBA2007331F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16219F3C2428BBA2007331F8 /* Main.storyboard */; };
+		16219F402428BBA4007331F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16219F3F2428BBA4007331F8 /* Assets.xcassets */; };
+		16219F432428BBA4007331F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16219F412428BBA4007331F8 /* LaunchScreen.storyboard */; };
+		16219F4E2428BBA5007331F8 /* Feshar_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16219F4D2428BBA5007331F8 /* Feshar_AppTests.swift */; };
+		16219F592428BBA5007331F8 /* Feshar_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16219F582428BBA5007331F8 /* Feshar_AppUITests.swift */; };
+		16219F672428BC81007331F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16219F662428BC81007331F8 /* LoginViewController.swift */; };
+		16648BBC24C6C12D0033FA0D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16648BBB24C6C12D0033FA0D /* Profile.swift */; };
+		16648BD024C80CC10033FA0D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16648BCF24C80CC00033FA0D /* Client.swift */; };
+		16648BD224C82F1F0033FA0D /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16648BD124C82F1F0033FA0D /* RequestToken.swift */; };
+		16648BD424C830120033FA0D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16648BD324C830120033FA0D /* Login.swift */; };
+		166561E324C9634100CCC7C1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561E224C9634100CCC7C1 /* Movie.swift */; };
+		166561E924CA420E00CCC7C1 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561E824CA420E00CCC7C1 /* Genre.swift */; };
+		166561EB24CA438A00CCC7C1 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561EA24CA438A00CCC7C1 /* Genres.swift */; };
+		166561F024CA49EF00CCC7C1 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561EF24CA49EF00CCC7C1 /* Credits.swift */; };
+		166561F224CA4B6700CCC7C1 /* MovieCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561F124CA4B6700CCC7C1 /* MovieCast.swift */; };
+		166561F524CA4EAC00CCC7C1 /* DetailsViewController+AnimationsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561F424CA4EAC00CCC7C1 /* DetailsViewController+AnimationsExtensions.swift */; };
+		166561F824CA538800CCC7C1 /* WatchlistViewController+ButtonShadowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561F724CA538800CCC7C1 /* WatchlistViewController+ButtonShadowExtensions.swift */; };
+		166561FA24CA5C5300CCC7C1 /* FacebookShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561F924CA5C5300CCC7C1 /* FacebookShare.swift */; };
+		166561FC24CA5C6500CCC7C1 /* TwitterShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166561FB24CA5C6500CCC7C1 /* TwitterShare.swift */; };
+		166F4A0B24319976009DC100 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A0A24319976009DC100 /* Cast.swift */; };
+		166F4A0E24319A8D009DC100 /* CastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A0D24319A8D009DC100 /* CastCell.swift */; };
+		166F4A11243299C2009DC100 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A10243299C2009DC100 /* HomeViewController.swift */; };
+		166F4A132432A07D009DC100 /* MenuBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A122432A07D009DC100 /* MenuBarViewCell.swift */; };
+		166F4A152432A1D4009DC100 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A142432A1D4009DC100 /* HomeCell.swift */; };
+		166F4A172432BB48009DC100 /* ListOfMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F4A162432BB48009DC100 /* ListOfMovies.swift */; };
+		16B1B91E24C637B500C0FECA /* AdventureFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B91D24C637B500C0FECA /* AdventureFeedCell.swift */; };
+		16B1B92024C6381300C0FECA /* AnimationFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B91F24C6381300C0FECA /* AnimationFeedCell.swift */; };
+		16B1B92224C6385100C0FECA /* ComedyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92124C6385100C0FECA /* ComedyFeedCell.swift */; };
+		16B1B92424C6388A00C0FECA /* CrimeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92324C6388A00C0FECA /* CrimeFeedCell.swift */; };
+		16B1B92624C638C600C0FECA /* DocumentaryFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92524C638C600C0FECA /* DocumentaryFeedCell.swift */; };
+		16B1B92824C6395800C0FECA /* DramaFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92724C6395800C0FECA /* DramaFeedCell.swift */; };
+		16B1B92A24C6398A00C0FECA /* FamilyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92924C6398A00C0FECA /* FamilyFeedCell.swift */; };
+		16B1B92C24C639A800C0FECA /* FantasyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92B24C639A800C0FECA /* FantasyFeedCell.swift */; };
+		16B1B92E24C639CA00C0FECA /* HistoryFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92D24C639CA00C0FECA /* HistoryFeedCell.swift */; };
+		16B1B93024C639F200C0FECA /* HorrorFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B92F24C639F200C0FECA /* HorrorFeedCell.swift */; };
+		16B1B93224C63A2200C0FECA /* MusicFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93124C63A2200C0FECA /* MusicFeedCell.swift */; };
+		16B1B93424C63A3500C0FECA /* MysteryFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93324C63A3500C0FECA /* MysteryFeedCell.swift */; };
+		16B1B93624C63A5900C0FECA /* RomanceFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93524C63A5900C0FECA /* RomanceFeedCell.swift */; };
+		16B1B93824C63A8100C0FECA /* ScienceFictionFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93724C63A8100C0FECA /* ScienceFictionFeedCell.swift */; };
+		16B1B93A24C63AA500C0FECA /* TvMovieFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93924C63AA500C0FECA /* TvMovieFeedCell.swift */; };
+		16B1B93C24C63AC100C0FECA /* ThrillerFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93B24C63AC100C0FECA /* ThrillerFeedCell.swift */; };
+		16B1B93E24C63AF000C0FECA /* WarFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93D24C63AF000C0FECA /* WarFeedCell.swift */; };
+		16B1B94024C63B0700C0FECA /* WesternFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B93F24C63B0700C0FECA /* WesternFeedCell.swift */; };
+		16B1B94224C63B3900C0FECA /* ActionFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1B94124C63B3900C0FECA /* ActionFeedCell.swift */; };
+		16C0127224331EE300612B5B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0127124331EE300612B5B /* CustomTabBarController.swift */; };
+		16C0127424331F3900612B5B /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0127324331F3900612B5B /* WatchlistViewController.swift */; };
+		16E64949244CEBDC007AAD16 /* TvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E64948244CEBDC007AAD16 /* TvCell.swift */; };
+		16E6494F244E0B30007AAD16 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E6494E244E0B30007AAD16 /* Watchlist.swift */; };
+		16E64955245003EE007AAD16 /* MovieGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E64954245003EE007AAD16 /* MovieGenres.swift */; };
+		16EFFD06242AC06600D23608 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFFD05242AC06600D23608 /* Extensions+UIColor.swift */; };
+		771F702E4FD28A2E8A51BCFB /* Pods_Feshar_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0561BA50F36BBD39B3E667E /* Pods_Feshar_App.framework */; };
+		F6660B28C075D33912B2A8EB /* Pods_Feshar_App_Feshar_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5660F112090BE3B35B017F6 /* Pods_Feshar_App_Feshar_AppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16219F4A2428BBA5007331F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16219F2B2428BBA2007331F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16219F322428BBA2007331F8;
+			remoteInfo = Feshar_App;
+		};
+		16219F552428BBA5007331F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16219F2B2428BBA2007331F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16219F322428BBA2007331F8;
+			remoteInfo = Feshar_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1602EA762434D86A00E69705 /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = "<group>"; };
+		1602EA7C2439200A00E69705 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		1602EA7E2439257900E69705 /* FeaturedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCell.swift; sourceTree = "<group>"; };
+		1602EA802439265300E69705 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		1604F70724BE0FCC002A6C7D /* DeleteSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSession.swift; sourceTree = "<group>"; };
+		1604F70924BE123A002A6C7D /* SessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequest.swift; sourceTree = "<group>"; };
+		160D717F24BB59CE00D7A646 /* BaseFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFeedCell.swift; sourceTree = "<group>"; };
+		160DFF0724310FC9004A4D64 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1613627624536F4400636DE9 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		1613627A2454AECA00636DE9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		16147DEC2440C115006F6E7A /* WatchlistDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistDetailsResponse.swift; sourceTree = "<group>"; };
+		16147DF02442042C006F6E7A /* WatchlistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistRequest.swift; sourceTree = "<group>"; };
+		16147DF224420884006F6E7A /* WatchlistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistResponse.swift; sourceTree = "<group>"; };
+		16195BAE243B5EA300968035 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		16195BB0243B5F4000968035 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		16195BB4243CF4EE00968035 /* Cache+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+helper.swift"; sourceTree = "<group>"; };
+		16195BB8243E689100968035 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		16195BBA243E71AB00968035 /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
+		16195BBC243EB49E00968035 /* MovieDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsResponse.swift; sourceTree = "<group>"; };
+		16195BBE24408A0400968035 /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
+		161A918724CA60F000B22D08 /* FindMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMovie.swift; sourceTree = "<group>"; };
+		161A919524CA7D4E00B22D08 /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
+		161A919824CA85C000B22D08 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		161A919B24CAA92400B22D08 /* LoginViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Extensions.swift"; sourceTree = "<group>"; };
+		161A91A124CAD08900B22D08 /* HomeViewController+CellCheckExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CellCheckExtensions.swift"; sourceTree = "<group>"; };
+		161A91A424CAD20400B22D08 /* HomeViewController+RegisterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+RegisterExtensions.swift"; sourceTree = "<group>"; };
+		161A91A724CB80DB00B22D08 /* DetailsViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsViewController+Extensions.swift"; sourceTree = "<group>"; };
+		161CF6FC244A3456003755D0 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		16219F332428BBA2007331F8 /* Feshar_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feshar_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16219F362428BBA2007331F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16219F382428BBA2007331F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16219F3D2428BBA2007331F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16219F3F2428BBA4007331F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16219F422428BBA4007331F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16219F442428BBA4007331F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16219F492428BBA5007331F8 /* Feshar_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feshar_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16219F4D2428BBA5007331F8 /* Feshar_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feshar_AppTests.swift; sourceTree = "<group>"; };
+		16219F4F2428BBA5007331F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16219F542428BBA5007331F8 /* Feshar_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feshar_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16219F582428BBA5007331F8 /* Feshar_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feshar_AppUITests.swift; sourceTree = "<group>"; };
+		16219F5A2428BBA5007331F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16219F662428BC81007331F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		16648BBB24C6C12D0033FA0D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		16648BCF24C80CC00033FA0D /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		16648BD124C82F1F0033FA0D /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
+		16648BD324C830120033FA0D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		166561E224C9634100CCC7C1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		166561E824CA420E00CCC7C1 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		166561EA24CA438A00CCC7C1 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		166561EF24CA49EF00CCC7C1 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		166561F124CA4B6700CCC7C1 /* MovieCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCast.swift; sourceTree = "<group>"; };
+		166561F424CA4EAC00CCC7C1 /* DetailsViewController+AnimationsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsViewController+AnimationsExtensions.swift"; sourceTree = "<group>"; };
+		166561F724CA538800CCC7C1 /* WatchlistViewController+ButtonShadowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchlistViewController+ButtonShadowExtensions.swift"; sourceTree = "<group>"; };
+		166561F924CA5C5300CCC7C1 /* FacebookShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookShare.swift; sourceTree = "<group>"; };
+		166561FB24CA5C6500CCC7C1 /* TwitterShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterShare.swift; sourceTree = "<group>"; };
+		166F4A0A24319976009DC100 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		166F4A0D24319A8D009DC100 /* CastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCell.swift; sourceTree = "<group>"; };
+		166F4A10243299C2009DC100 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		166F4A122432A07D009DC100 /* MenuBarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewCell.swift; sourceTree = "<group>"; };
+		166F4A142432A1D4009DC100 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		166F4A162432BB48009DC100 /* ListOfMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMovies.swift; sourceTree = "<group>"; };
+		16B1B91D24C637B500C0FECA /* AdventureFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureFeedCell.swift; sourceTree = "<group>"; };
+		16B1B91F24C6381300C0FECA /* AnimationFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92124C6385100C0FECA /* ComedyFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComedyFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92324C6388A00C0FECA /* CrimeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92524C638C600C0FECA /* DocumentaryFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentaryFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92724C6395800C0FECA /* DramaFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92924C6398A00C0FECA /* FamilyFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92B24C639A800C0FECA /* FantasyFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92D24C639CA00C0FECA /* HistoryFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryFeedCell.swift; sourceTree = "<group>"; };
+		16B1B92F24C639F200C0FECA /* HorrorFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93124C63A2200C0FECA /* MusicFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93324C63A3500C0FECA /* MysteryFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysteryFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93524C63A5900C0FECA /* RomanceFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanceFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93724C63A8100C0FECA /* ScienceFictionFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceFictionFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93924C63AA500C0FECA /* TvMovieFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvMovieFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93B24C63AC100C0FECA /* ThrillerFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrillerFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93D24C63AF000C0FECA /* WarFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFeedCell.swift; sourceTree = "<group>"; };
+		16B1B93F24C63B0700C0FECA /* WesternFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternFeedCell.swift; sourceTree = "<group>"; };
+		16B1B94124C63B3900C0FECA /* ActionFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFeedCell.swift; sourceTree = "<group>"; };
+		16C0127124331EE300612B5B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		16C0127324331F3900612B5B /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
+		16E64948244CEBDC007AAD16 /* TvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvCell.swift; sourceTree = "<group>"; };
+		16E6494E244E0B30007AAD16 /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
+		16E64954245003EE007AAD16 /* MovieGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenres.swift; sourceTree = "<group>"; };
+		16EFFD05242AC06600D23608 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
+		3F281E54DA05F4BD96EF635F /* Pods_Feshar_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feshar_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8045B3ABC4C106B121BE2D00 /* Pods-Feshar_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_App.release.xcconfig"; path = "Target Support Files/Pods-Feshar_App/Pods-Feshar_App.release.xcconfig"; sourceTree = "<group>"; };
+		89C823C15AB6CBD9BF697C22 /* Pods-Feshar_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_App.debug.xcconfig"; path = "Target Support Files/Pods-Feshar_App/Pods-Feshar_App.debug.xcconfig"; sourceTree = "<group>"; };
+		A95BF45289FA55D53DDAFB49 /* Pods-Feshar_App-Feshar_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_App-Feshar_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Feshar_App-Feshar_AppUITests/Pods-Feshar_App-Feshar_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C04F02B1FB6E1EBE57E419BA /* Pods-Feshar_App-Feshar_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_App-Feshar_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Feshar_App-Feshar_AppUITests/Pods-Feshar_App-Feshar_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0561BA50F36BBD39B3E667E /* Pods_Feshar_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feshar_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5660F112090BE3B35B017F6 /* Pods_Feshar_App_Feshar_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feshar_App_Feshar_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3201B9D64EBA3DEE15DD033 /* Pods-Feshar_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_AppTests.release.xcconfig"; path = "Target Support Files/Pods-Feshar_AppTests/Pods-Feshar_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFC8ACE6826D4B4758AAFB81 /* Pods-Feshar_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feshar_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Feshar_AppTests/Pods-Feshar_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16219F302428BBA2007331F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771F702E4FD28A2E8A51BCFB /* Pods_Feshar_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F462428BBA5007331F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA81DC423410CD2486AD038 /* Pods_Feshar_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F512428BBA5007331F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6660B28C075D33912B2A8EB /* Pods_Feshar_App_Feshar_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		161A918924CA612300B22D08 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				161A918724CA60F000B22D08 /* FindMovie.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		161A918A24CA725600B22D08 /* Request Token Response */ = {
+			isa = PBXGroup;
+			children = (
+				16195BBA243E71AB00968035 /* RequestTokenResponse.swift */,
+			);
+			path = "Request Token Response";
+			sourceTree = "<group>";
+		};
+		161A918B24CA729D00B22D08 /* Session With Login Request */ = {
+			isa = PBXGroup;
+			children = (
+				16195BB8243E689100968035 /* LoginRequest.swift */,
+			);
+			path = "Session With Login Request";
+			sourceTree = "<group>";
+		};
+		161A918C24CA74E600B22D08 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				161A918B24CA729D00B22D08 /* Session With Login Request */,
+				161A919124CA778100B22D08 /* Session Request */,
+				161A918E24CA759000B22D08 /* Watchlist Request */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		161A918D24CA755300B22D08 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				161A918A24CA725600B22D08 /* Request Token Response */,
+				161A919024CA775400B22D08 /* Session Response */,
+				166561E724CA41DB00CCC7C1 /* Genre Response */,
+				166561E424C963F500CCC7C1 /* Movie Response */,
+				166561EE24CA49D100CCC7C1 /* Cast Response */,
+				161A919424CA78D000B22D08 /* WatchlistDetailsResponse */,
+				161A918F24CA759E00B22D08 /* Watchlist Response */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		161A918E24CA759000B22D08 /* Watchlist Request */ = {
+			isa = PBXGroup;
+			children = (
+				16147DF02442042C006F6E7A /* WatchlistRequest.swift */,
+			);
+			path = "Watchlist Request";
+			sourceTree = "<group>";
+		};
+		161A918F24CA759E00B22D08 /* Watchlist Response */ = {
+			isa = PBXGroup;
+			children = (
+				16147DF224420884006F6E7A /* WatchlistResponse.swift */,
+			);
+			path = "Watchlist Response";
+			sourceTree = "<group>";
+		};
+		161A919024CA775400B22D08 /* Session Response */ = {
+			isa = PBXGroup;
+			children = (
+				16195BBE24408A0400968035 /* SessionResponse.swift */,
+			);
+			path = "Session Response";
+			sourceTree = "<group>";
+		};
+		161A919124CA778100B22D08 /* Session Request */ = {
+			isa = PBXGroup;
+			children = (
+				1604F70924BE123A002A6C7D /* SessionRequest.swift */,
+			);
+			path = "Session Request";
+			sourceTree = "<group>";
+		};
+		161A919324CA787B00B22D08 /* Delete Session */ = {
+			isa = PBXGroup;
+			children = (
+				1604F70724BE0FCC002A6C7D /* DeleteSession.swift */,
+			);
+			path = "Delete Session";
+			sourceTree = "<group>";
+		};
+		161A919424CA78D000B22D08 /* WatchlistDetailsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				16147DEC2440C115006F6E7A /* WatchlistDetailsResponse.swift */,
+			);
+			path = WatchlistDetailsResponse;
+			sourceTree = "<group>";
+		};
+		161A919724CA80B900B22D08 /* LogOut+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				161A919524CA7D4E00B22D08 /* LogOut.swift */,
+			);
+			path = "LogOut+Extensions";
+			sourceTree = "<group>";
+		};
+		161A919A24CA9D9600B22D08 /* Movie Details */ = {
+			isa = PBXGroup;
+			children = (
+				161A919824CA85C000B22D08 /* MovieDetails.swift */,
+			);
+			path = "Movie Details";
+			sourceTree = "<group>";
+		};
+		161A919D24CAB38800B22D08 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				16195BB4243CF4EE00968035 /* Cache+helper.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		161A919E24CAB39200B22D08 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				16EFFD05242AC06600D23608 /* Extensions+UIColor.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		161A919F24CAB3AE00B22D08 /* Watchlist Page */ = {
+			isa = PBXGroup;
+			children = (
+				16C0127324331F3900612B5B /* WatchlistViewController.swift */,
+				166561F724CA538800CCC7C1 /* WatchlistViewController+ButtonShadowExtensions.swift */,
+			);
+			path = "Watchlist Page";
+			sourceTree = "<group>";
+		};
+		161A91A324CAD09000B22D08 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				166F4A10243299C2009DC100 /* HomeViewController.swift */,
+				161A91A424CAD20400B22D08 /* HomeViewController+RegisterExtensions.swift */,
+				161A91A124CAD08900B22D08 /* HomeViewController+CellCheckExtensions.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		161A91A624CB7CC200B22D08 /* Featured Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1602EA7E2439257900E69705 /* FeaturedCell.swift */,
+				1602EA802439265300E69705 /* MovieCell.swift */,
+				16E64948244CEBDC007AAD16 /* TvCell.swift */,
+			);
+			path = "Featured Cell";
+			sourceTree = "<group>";
+		};
+		161A91A924CB818900B22D08 /* Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				160DFF0724310FC9004A4D64 /* DetailsViewController.swift */,
+				161A91A724CB80DB00B22D08 /* DetailsViewController+Extensions.swift */,
+				166561F424CA4EAC00CCC7C1 /* DetailsViewController+AnimationsExtensions.swift */,
+			);
+			path = "Details Page";
+			sourceTree = "<group>";
+		};
+		161A91AA24CCD4F900B22D08 /* Home Feed Cell */ = {
+			isa = PBXGroup;
+			children = (
+				160D717F24BB59CE00D7A646 /* BaseFeedCell.swift */,
+				166561FD24CA5CB700CCC7C1 /* BaseFeedCell+ShareExtensions */,
+				166F4A142432A1D4009DC100 /* HomeCell.swift */,
+			);
+			path = "Home Feed Cell";
+			sourceTree = "<group>";
+		};
+		16219F2A2428BBA2007331F8 = {
+			isa = PBXGroup;
+			children = (
+				16219F352428BBA2007331F8 /* Feshar_App */,
+				16219F4C2428BBA5007331F8 /* Feshar_AppTests */,
+				16219F572428BBA5007331F8 /* Feshar_AppUITests */,
+				16219F342428BBA2007331F8 /* Products */,
+				EC0A4CAD2365D33E32C806F7 /* Pods */,
+				84F4B02E64D8B7FC2D8BA4C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16219F342428BBA2007331F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16219F332428BBA2007331F8 /* Feshar_App.app */,
+				16219F492428BBA5007331F8 /* Feshar_AppTests.xctest */,
+				16219F542428BBA5007331F8 /* Feshar_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16219F352428BBA2007331F8 /* Feshar_App */ = {
+			isa = PBXGroup;
+			children = (
+				16219F362428BBA2007331F8 /* AppDelegate.swift */,
+				16219F382428BBA2007331F8 /* SceneDelegate.swift */,
+				16EFFD07242AC07800D23608 /* Helper */,
+				166F4A0C24319987009DC100 /* Model */,
+				16A99F4224C62FDE00357900 /* Controller */,
+				166F4A0F2431AD09009DC100 /* View */,
+				16219F3C2428BBA2007331F8 /* Main.storyboard */,
+				16219F3F2428BBA4007331F8 /* Assets.xcassets */,
+				16219F412428BBA4007331F8 /* LaunchScreen.storyboard */,
+				16219F442428BBA4007331F8 /* Info.plist */,
+			);
+			path = Feshar_App;
+			sourceTree = "<group>";
+		};
+		16219F4C2428BBA5007331F8 /* Feshar_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				16219F4D2428BBA5007331F8 /* Feshar_AppTests.swift */,
+				16219F4F2428BBA5007331F8 /* Info.plist */,
+			);
+			path = Feshar_AppTests;
+			sourceTree = "<group>";
+		};
+		16219F572428BBA5007331F8 /* Feshar_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16219F582428BBA5007331F8 /* Feshar_AppUITests.swift */,
+				16219F5A2428BBA5007331F8 /* Info.plist */,
+			);
+			path = Feshar_AppUITests;
+			sourceTree = "<group>";
+		};
+		16648BD624C830CC0033FA0D /* Request Token */ = {
+			isa = PBXGroup;
+			children = (
+				16648BD124C82F1F0033FA0D /* RequestToken.swift */,
+			);
+			path = "Request Token";
+			sourceTree = "<group>";
+		};
+		16648BD724C8310B0033FA0D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				16648BCF24C80CC00033FA0D /* Client.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		16648BD824C831430033FA0D /* Session With Login */ = {
+			isa = PBXGroup;
+			children = (
+				16648BD324C830120033FA0D /* Login.swift */,
+			);
+			path = "Session With Login";
+			sourceTree = "<group>";
+		};
+		16648BD924C83A570033FA0D /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				161CF6FC244A3456003755D0 /* Session.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		16648BDA24C91B180033FA0D /* Watchlist */ = {
+			isa = PBXGroup;
+			children = (
+				16E6494E244E0B30007AAD16 /* Watchlist.swift */,
+			);
+			path = Watchlist;
+			sourceTree = "<group>";
+		};
+		166561E024C9626300CCC7C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1613627A2454AECA00636DE9 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		166561E124C962B700CCC7C1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				16648BBB24C6C12D0033FA0D /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		166561E424C963F500CCC7C1 /* Movie Response */ = {
+			isa = PBXGroup;
+			children = (
+				166F4A162432BB48009DC100 /* ListOfMovies.swift */,
+				166561E224C9634100CCC7C1 /* Movie.swift */,
+				16195BBC243EB49E00968035 /* MovieDetailsResponse.swift */,
+			);
+			path = "Movie Response";
+			sourceTree = "<group>";
+		};
+		166561E724CA41DB00CCC7C1 /* Genre Response */ = {
+			isa = PBXGroup;
+			children = (
+				16E64954245003EE007AAD16 /* MovieGenres.swift */,
+				166561E824CA420E00CCC7C1 /* Genre.swift */,
+			);
+			path = "Genre Response";
+			sourceTree = "<group>";
+		};
+		166561EC24CA45E100CCC7C1 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				166561EA24CA438A00CCC7C1 /* Genres.swift */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		166561ED24CA481500CCC7C1 /* Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1613627624536F4400636DE9 /* MenuBarView.swift */,
+				166F4A122432A07D009DC100 /* MenuBarViewCell.swift */,
+			);
+			path = "Menu Bar";
+			sourceTree = "<group>";
+		};
+		166561EE24CA49D100CCC7C1 /* Cast Response */ = {
+			isa = PBXGroup;
+			children = (
+				166561EF24CA49EF00CCC7C1 /* Credits.swift */,
+				166F4A0A24319976009DC100 /* Cast.swift */,
+			);
+			path = "Cast Response";
+			sourceTree = "<group>";
+		};
+		166561F324CA4B9100CCC7C1 /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				166561F124CA4B6700CCC7C1 /* MovieCast.swift */,
+			);
+			path = Cast;
+			sourceTree = "<group>";
+		};
+		166561FD24CA5CB700CCC7C1 /* BaseFeedCell+ShareExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				166561F924CA5C5300CCC7C1 /* FacebookShare.swift */,
+				166561FB24CA5C6500CCC7C1 /* TwitterShare.swift */,
+			);
+			path = "BaseFeedCell+ShareExtensions";
+			sourceTree = "<group>";
+		};
+		166F4A0C24319987009DC100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16648BD724C8310B0033FA0D /* Client */,
+				16648BD624C830CC0033FA0D /* Request Token */,
+				16648BD824C831430033FA0D /* Session With Login */,
+				16648BD924C83A570033FA0D /* Session */,
+				161A918D24CA755300B22D08 /* Response */,
+				161A918C24CA74E600B22D08 /* Request */,
+				166561E024C9626300CCC7C1 /* Service */,
+				161A919A24CA9D9600B22D08 /* Movie Details */,
+				166561F324CA4B9100CCC7C1 /* Cast */,
+				166561EC24CA45E100CCC7C1 /* Genres */,
+				161A918924CA612300B22D08 /* Search */,
+				16648BDA24C91B180033FA0D /* Watchlist */,
+				166561E124C962B700CCC7C1 /* Profile */,
+				161A919324CA787B00B22D08 /* Delete Session */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		166F4A0F2431AD09009DC100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				166561ED24CA481500CCC7C1 /* Menu Bar */,
+				16B1B94324C665B600C0FECA /* Home View Cell */,
+				166F4A0D24319A8D009DC100 /* CastCell.swift */,
+				1602EA762434D86A00E69705 /* WatchlistTableViewCell.swift */,
+				161A91A624CB7CC200B22D08 /* Featured Cell */,
+				16195BB0243B5F4000968035 /* ProfileCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16A99F4224C62FDE00357900 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16EFFD002428EEF400D23608 /* Authentication */,
+				16C0127124331EE300612B5B /* CustomTabBarController.swift */,
+				161A91A324CAD09000B22D08 /* Home Page */,
+				161A91A924CB818900B22D08 /* Details Page */,
+				161A919F24CAB3AE00B22D08 /* Watchlist Page */,
+				1602EA7C2439200A00E69705 /* FeaturedViewController.swift */,
+				16195BAE243B5EA300968035 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16B1B94324C665B600C0FECA /* Home View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				161A91AA24CCD4F900B22D08 /* Home Feed Cell */,
+				16B1B94124C63B3900C0FECA /* ActionFeedCell.swift */,
+				16B1B91D24C637B500C0FECA /* AdventureFeedCell.swift */,
+				16B1B91F24C6381300C0FECA /* AnimationFeedCell.swift */,
+				16B1B92124C6385100C0FECA /* ComedyFeedCell.swift */,
+				16B1B92324C6388A00C0FECA /* CrimeFeedCell.swift */,
+				16B1B92524C638C600C0FECA /* DocumentaryFeedCell.swift */,
+				16B1B92724C6395800C0FECA /* DramaFeedCell.swift */,
+				16B1B92924C6398A00C0FECA /* FamilyFeedCell.swift */,
+				16B1B92B24C639A800C0FECA /* FantasyFeedCell.swift */,
+				16B1B92D24C639CA00C0FECA /* HistoryFeedCell.swift */,
+				16B1B92F24C639F200C0FECA /* HorrorFeedCell.swift */,
+				16B1B93124C63A2200C0FECA /* MusicFeedCell.swift */,
+				16B1B93324C63A3500C0FECA /* MysteryFeedCell.swift */,
+				16B1B93524C63A5900C0FECA /* RomanceFeedCell.swift */,
+				16B1B93724C63A8100C0FECA /* ScienceFictionFeedCell.swift */,
+				16B1B93924C63AA500C0FECA /* TvMovieFeedCell.swift */,
+				16B1B93B24C63AC100C0FECA /* ThrillerFeedCell.swift */,
+				16B1B93D24C63AF000C0FECA /* WarFeedCell.swift */,
+				16B1B93F24C63B0700C0FECA /* WesternFeedCell.swift */,
+			);
+			path = "Home View Cell";
+			sourceTree = "<group>";
+		};
+		16EFFD002428EEF400D23608 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				16219F662428BC81007331F8 /* LoginViewController.swift */,
+				161A919B24CAA92400B22D08 /* LoginViewController+Extensions.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		16EFFD07242AC07800D23608 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				161A919E24CAB39200B22D08 /* Color */,
+				161A919D24CAB38800B22D08 /* Cache */,
+				161A919724CA80B900B22D08 /* LogOut+Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84F4B02E64D8B7FC2D8BA4C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0561BA50F36BBD39B3E667E /* Pods_Feshar_App.framework */,
+				C5660F112090BE3B35B017F6 /* Pods_Feshar_App_Feshar_AppUITests.framework */,
+				3F281E54DA05F4BD96EF635F /* Pods_Feshar_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0A4CAD2365D33E32C806F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89C823C15AB6CBD9BF697C22 /* Pods-Feshar_App.debug.xcconfig */,
+				8045B3ABC4C106B121BE2D00 /* Pods-Feshar_App.release.xcconfig */,
+				C04F02B1FB6E1EBE57E419BA /* Pods-Feshar_App-Feshar_AppUITests.debug.xcconfig */,
+				A95BF45289FA55D53DDAFB49 /* Pods-Feshar_App-Feshar_AppUITests.release.xcconfig */,
+				FFC8ACE6826D4B4758AAFB81 /* Pods-Feshar_AppTests.debug.xcconfig */,
+				E3201B9D64EBA3DEE15DD033 /* Pods-Feshar_AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16219F322428BBA2007331F8 /* Feshar_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16219F5D2428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_App" */;
+			buildPhases = (
+				63AEBE57421EDE6B5A86611C /* [CP] Check Pods Manifest.lock */,
+				16219F2F2428BBA2007331F8 /* Sources */,
+				16219F302428BBA2007331F8 /* Frameworks */,
+				16219F312428BBA2007331F8 /* Resources */,
+				69B90CEBCC94F0ADEE0633DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Feshar_App;
+			productName = Feshar_App;
+			productReference = 16219F332428BBA2007331F8 /* Feshar_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16219F482428BBA5007331F8 /* Feshar_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16219F602428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_AppTests" */;
+			buildPhases = (
+				13D6AF5F7705CD88CC890CEC /* [CP] Check Pods Manifest.lock */,
+				16219F452428BBA5007331F8 /* Sources */,
+				16219F462428BBA5007331F8 /* Frameworks */,
+				16219F472428BBA5007331F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16219F4B2428BBA5007331F8 /* PBXTargetDependency */,
+			);
+			name = Feshar_AppTests;
+			productName = Feshar_AppTests;
+			productReference = 16219F492428BBA5007331F8 /* Feshar_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16219F532428BBA5007331F8 /* Feshar_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16219F632428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_AppUITests" */;
+			buildPhases = (
+				87E44C670A1AC09F9A779EC2 /* [CP] Check Pods Manifest.lock */,
+				16219F502428BBA5007331F8 /* Sources */,
+				16219F512428BBA5007331F8 /* Frameworks */,
+				16219F522428BBA5007331F8 /* Resources */,
+				964B3FF5C488613F4282C759 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16219F562428BBA5007331F8 /* PBXTargetDependency */,
+			);
+			name = Feshar_AppUITests;
+			productName = Feshar_AppUITests;
+			productReference = 16219F542428BBA5007331F8 /* Feshar_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16219F2B2428BBA2007331F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Elser_10;
+				TargetAttributes = {
+					16219F322428BBA2007331F8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					16219F482428BBA5007331F8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 16219F322428BBA2007331F8;
+					};
+					16219F532428BBA5007331F8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 16219F322428BBA2007331F8;
+					};
+				};
+			};
+			buildConfigurationList = 16219F2E2428BBA2007331F8 /* Build configuration list for PBXProject "Feshar_App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16219F2A2428BBA2007331F8;
+			productRefGroup = 16219F342428BBA2007331F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16219F322428BBA2007331F8 /* Feshar_App */,
+				16219F482428BBA5007331F8 /* Feshar_AppTests */,
+				16219F532428BBA5007331F8 /* Feshar_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16219F312428BBA2007331F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16219F432428BBA4007331F8 /* LaunchScreen.storyboard in Resources */,
+				16219F402428BBA4007331F8 /* Assets.xcassets in Resources */,
+				16219F3E2428BBA2007331F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F472428BBA5007331F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F522428BBA5007331F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D6AF5F7705CD88CC890CEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feshar_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63AEBE57421EDE6B5A86611C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feshar_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B90CEBCC94F0ADEE0633DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feshar_App/Pods-Feshar_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feshar_App/Pods-Feshar_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Feshar_App/Pods-Feshar_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E44C670A1AC09F9A779EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feshar_App-Feshar_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964B3FF5C488613F4282C759 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feshar_App-Feshar_AppUITests/Pods-Feshar_App-Feshar_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feshar_App-Feshar_AppUITests/Pods-Feshar_App-Feshar_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Feshar_App-Feshar_AppUITests/Pods-Feshar_App-Feshar_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16219F2F2428BBA2007331F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16219F372428BBA2007331F8 /* AppDelegate.swift in Sources */,
+				161A919624CA7D4E00B22D08 /* LogOut.swift in Sources */,
+				166F4A0B24319976009DC100 /* Cast.swift in Sources */,
+				166F4A172432BB48009DC100 /* ListOfMovies.swift in Sources */,
+				166561F024CA49EF00CCC7C1 /* Credits.swift in Sources */,
+				16E6494F244E0B30007AAD16 /* Watchlist.swift in Sources */,
+				16195BB1243B5F4000968035 /* ProfileCell.swift in Sources */,
+				161A919C24CAA92400B22D08 /* LoginViewController+Extensions.swift in Sources */,
+				1604F70824BE0FCC002A6C7D /* DeleteSession.swift in Sources */,
+				16B1B93024C639F200C0FECA /* HorrorFeedCell.swift in Sources */,
+				161A919924CA85C000B22D08 /* MovieDetails.swift in Sources */,
+				16195BB5243CF4EE00968035 /* Cache+helper.swift in Sources */,
+				16648BBC24C6C12D0033FA0D /* Profile.swift in Sources */,
+				16B1B92E24C639CA00C0FECA /* HistoryFeedCell.swift in Sources */,
+				1604F70A24BE123A002A6C7D /* SessionRequest.swift in Sources */,
+				166561EB24CA438A00CCC7C1 /* Genres.swift in Sources */,
+				16B1B92A24C6398A00C0FECA /* FamilyFeedCell.swift in Sources */,
+				16B1B94224C63B3900C0FECA /* ActionFeedCell.swift in Sources */,
+				16B1B93624C63A5900C0FECA /* RomanceFeedCell.swift in Sources */,
+				16B1B92624C638C600C0FECA /* DocumentaryFeedCell.swift in Sources */,
+				16147DF324420884006F6E7A /* WatchlistResponse.swift in Sources */,
+				16B1B93C24C63AC100C0FECA /* ThrillerFeedCell.swift in Sources */,
+				16EFFD06242AC06600D23608 /* Extensions+UIColor.swift in Sources */,
+				16B1B93224C63A2200C0FECA /* MusicFeedCell.swift in Sources */,
+				16E64955245003EE007AAD16 /* MovieGenres.swift in Sources */,
+				16B1B93A24C63AA500C0FECA /* TvMovieFeedCell.swift in Sources */,
+				16B1B93E24C63AF000C0FECA /* WarFeedCell.swift in Sources */,
+				1613627724536F4400636DE9 /* MenuBarView.swift in Sources */,
+				16B1B94024C63B0700C0FECA /* WesternFeedCell.swift in Sources */,
+				166561FC24CA5C6500CCC7C1 /* TwitterShare.swift in Sources */,
+				166F4A0E24319A8D009DC100 /* CastCell.swift in Sources */,
+				1613627B2454AECA00636DE9 /* Service.swift in Sources */,
+				166561E924CA420E00CCC7C1 /* Genre.swift in Sources */,
+				16147DF12442042C006F6E7A /* WatchlistRequest.swift in Sources */,
+				16B1B92024C6381300C0FECA /* AnimationFeedCell.swift in Sources */,
+				16B1B92224C6385100C0FECA /* ComedyFeedCell.swift in Sources */,
+				166561F224CA4B6700CCC7C1 /* MovieCast.swift in Sources */,
+				16648BD424C830120033FA0D /* Login.swift in Sources */,
+				16195BBB243E71AB00968035 /* RequestTokenResponse.swift in Sources */,
+				1602EA772434D86A00E69705 /* WatchlistTableViewCell.swift in Sources */,
+				166561E324C9634100CCC7C1 /* Movie.swift in Sources */,
+				16B1B92824C6395800C0FECA /* DramaFeedCell.swift in Sources */,
+				16219F392428BBA2007331F8 /* SceneDelegate.swift in Sources */,
+				166561F524CA4EAC00CCC7C1 /* DetailsViewController+AnimationsExtensions.swift in Sources */,
+				166561F824CA538800CCC7C1 /* WatchlistViewController+ButtonShadowExtensions.swift in Sources */,
+				16B1B92C24C639A800C0FECA /* FantasyFeedCell.swift in Sources */,
+				166F4A11243299C2009DC100 /* HomeViewController.swift in Sources */,
+				160D718024BB59CE00D7A646 /* BaseFeedCell.swift in Sources */,
+				16195BBD243EB49E00968035 /* MovieDetailsResponse.swift in Sources */,
+				16219F672428BC81007331F8 /* LoginViewController.swift in Sources */,
+				16147DED2440C115006F6E7A /* WatchlistDetailsResponse.swift in Sources */,
+				16C0127424331F3900612B5B /* WatchlistViewController.swift in Sources */,
+				16C0127224331EE300612B5B /* CustomTabBarController.swift in Sources */,
+				1602EA812439265300E69705 /* MovieCell.swift in Sources */,
+				161A918824CA60F000B22D08 /* FindMovie.swift in Sources */,
+				16B1B93824C63A8100C0FECA /* ScienceFictionFeedCell.swift in Sources */,
+				166561FA24CA5C5300CCC7C1 /* FacebookShare.swift in Sources */,
+				16195BB9243E689100968035 /* LoginRequest.swift in Sources */,
+				16B1B93424C63A3500C0FECA /* MysteryFeedCell.swift in Sources */,
+				1602EA7D2439200A00E69705 /* FeaturedViewController.swift in Sources */,
+				161CF6FD244A3456003755D0 /* Session.swift in Sources */,
+				166F4A132432A07D009DC100 /* MenuBarViewCell.swift in Sources */,
+				161A91A824CB80DB00B22D08 /* DetailsViewController+Extensions.swift in Sources */,
+				16195BBF24408A0400968035 /* SessionResponse.swift in Sources */,
+				16B1B92424C6388A00C0FECA /* CrimeFeedCell.swift in Sources */,
+				1602EA7F2439257900E69705 /* FeaturedCell.swift in Sources */,
+				16E64949244CEBDC007AAD16 /* TvCell.swift in Sources */,
+				161A91A524CAD20400B22D08 /* HomeViewController+RegisterExtensions.swift in Sources */,
+				16B1B91E24C637B500C0FECA /* AdventureFeedCell.swift in Sources */,
+				16648BD224C82F1F0033FA0D /* RequestToken.swift in Sources */,
+				161A91A224CAD08900B22D08 /* HomeViewController+CellCheckExtensions.swift in Sources */,
+				16648BD024C80CC10033FA0D /* Client.swift in Sources */,
+				16195BAF243B5EA300968035 /* ProfileViewController.swift in Sources */,
+				166F4A152432A1D4009DC100 /* HomeCell.swift in Sources */,
+				160DFF0824310FC9004A4D64 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F452428BBA5007331F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16219F4E2428BBA5007331F8 /* Feshar_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16219F502428BBA5007331F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16219F592428BBA5007331F8 /* Feshar_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16219F4B2428BBA5007331F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16219F322428BBA2007331F8 /* Feshar_App */;
+			targetProxy = 16219F4A2428BBA5007331F8 /* PBXContainerItemProxy */;
+		};
+		16219F562428BBA5007331F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16219F322428BBA2007331F8 /* Feshar_App */;
+			targetProxy = 16219F552428BBA5007331F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16219F3C2428BBA2007331F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16219F3D2428BBA2007331F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16219F412428BBA4007331F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16219F422428BBA4007331F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16219F5B2428BBA5007331F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16219F5C2428BBA5007331F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16219F5E2428BBA5007331F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C823C15AB6CBD9BF697C22 /* Pods-Feshar_App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Feshar_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16219F5F2428BBA5007331F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8045B3ABC4C106B121BE2D00 /* Pods-Feshar_App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Feshar_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16219F612428BBA5007331F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC8ACE6826D4B4758AAFB81 /* Pods-Feshar_AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Feshar_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feshar_App.app/Feshar_App";
+			};
+			name = Debug;
+		};
+		16219F622428BBA5007331F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3201B9D64EBA3DEE15DD033 /* Pods-Feshar_AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Feshar_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feshar_App.app/Feshar_App";
+			};
+			name = Release;
+		};
+		16219F642428BBA5007331F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04F02B1FB6E1EBE57E419BA /* Pods-Feshar_App-Feshar_AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Feshar_AppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feshar_App;
+			};
+			name = Debug;
+		};
+		16219F652428BBA5007331F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95BF45289FA55D53DDAFB49 /* Pods-Feshar_App-Feshar_AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Feshar_AppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Feshar-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feshar_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16219F2E2428BBA2007331F8 /* Build configuration list for PBXProject "Feshar_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16219F5B2428BBA5007331F8 /* Debug */,
+				16219F5C2428BBA5007331F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16219F5D2428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16219F5E2428BBA5007331F8 /* Debug */,
+				16219F5F2428BBA5007331F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16219F602428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16219F612428BBA5007331F8 /* Debug */,
+				16219F622428BBA5007331F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16219F632428BBA5007331F8 /* Build configuration list for PBXNativeTarget "Feshar_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16219F642428BBA5007331F8 /* Debug */,
+				16219F652428BBA5007331F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16219F2B2428BBA2007331F8 /* Project object */;
+}
