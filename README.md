@@ -5,13 +5,13 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
-    <img src="https://img.shields.io/badge/version-1.0-magenta.svg" />
+    <img src="https://img.shields.io/badge/version-1.0-blue.svg" />
     <img src="https://img.shields.io/badge/platforms-mac-brightgreen.svg?style=flat" alt="Mac"
      />
 </p>
 
 
-Welcome to [**Feshar**](https://youtu.be/dOQKdlTW_iI), an app for Movies and Tv Shows lovers. You can add the movie to your Watchlist to watch it later and after watching you can remove it from your Watchlist, you can search for your favorite movie, and you can share it on Facebook, or Twitter, if you like.
+Welcome to [**Feshar**](https://youtu.be/EiXtgDZ8I98), an app for Movies and Tv Shows lovers. You can add the movie to your Watchlist to watch it later and after watching you can remove it from your Watchlist, you can search for your favorite movie, and you can share it on Facebook, or Twitter, if you like.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ Welcome to [**Feshar**](https://youtu.be/dOQKdlTW_iI), an app for Movies and Tv 
 ### How It Works?
 
 Just Download the project, Create an account on [**TMDB**](https://www.themoviedb.org/account/signup?language=en-US
-), change the **API Key** from **Client** file, then take Falcon 9🚀 to the movie world, and Godspeed for you!
+), Change the **API Key** from **Client** file, then take a Falcon 9🚀 to the movie world, and Godspeed for you!
 
  
 ## Requirements
