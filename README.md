@@ -29,7 +29,7 @@ Welcome to [**Feshar**](https://youtu.be/aS4eE0NMNms)🍿🍿🍿, an app for Mo
 ### How It Works?
 
 Just Download the project, Create an account on [**TMDB**](https://www.themoviedb.org/account/signup?language=en-US
-), Change the **API Key** from **Client** file, then take a Falcon 9🚀 to the movie world, and Godspeed for you!
+), Change the **API Key** from **Client** file, then take a Falcon 9🚀 to the entertainment world, and Godspeed for you!
 
  
 ## Requirements
