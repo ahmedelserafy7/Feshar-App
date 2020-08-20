@@ -469,6 +469,30 @@
 			path = Feshar_AppUITests;
 			sourceTree = "<group>";
 		};
+		1627CC3A24EF1E2900D31F0A /* TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16C0127124331EE300612B5B /* CustomTabBarController.swift */,
+			);
+			path = "TabBar Controller";
+			sourceTree = "<group>";
+		};
+		1627CC3B24EF1E4A00D31F0A /* Featured Page */ = {
+			isa = PBXGroup;
+			children = (
+				1602EA7C2439200A00E69705 /* FeaturedViewController.swift */,
+			);
+			path = "Featured Page";
+			sourceTree = "<group>";
+		};
+		1627CC3C24EF1E6400D31F0A /* Profile Page */ = {
+			isa = PBXGroup;
+			children = (
+				16195BAE243B5EA300968035 /* ProfileViewController.swift */,
+			);
+			path = "Profile Page";
+			sourceTree = "<group>";
+		};
 		16648BD624C830CC0033FA0D /* Request Token */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,12 +649,12 @@
 			isa = PBXGroup;
 			children = (
 				16EFFD002428EEF400D23608 /* Authentication */,
-				16C0127124331EE300612B5B /* CustomTabBarController.swift */,
+				1627CC3A24EF1E2900D31F0A /* TabBar Controller */,
 				161A91A324CAD09000B22D08 /* Home Page */,
 				161A91A924CB818900B22D08 /* Details Page */,
 				161A919F24CAB3AE00B22D08 /* Watchlist Page */,
-				1602EA7C2439200A00E69705 /* FeaturedViewController.swift */,
-				16195BAE243B5EA300968035 /* ProfileViewController.swift */,
+				1627CC3B24EF1E4A00D31F0A /* Featured Page */,
+				1627CC3C24EF1E6400D31F0A /* Profile Page */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
