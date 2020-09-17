@@ -12,83 +12,27 @@ extension HomeViewController {
     
     func checkFeedCell(collectionView: UICollectionView, by indexPath: IndexPath)-> UICollectionViewCell {
         
-        var cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.actionId.stringValue, indexPath: indexPath)
-        
-        if indexPath.item == 0 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.actionId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 1 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.adventureId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 2 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.animationId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 3 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.comedyId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 4 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.crimeId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 5 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.documentaryId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 6 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.dramaId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 7 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.familyId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 8 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.fantasyId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 9 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.historyId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 10 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.horrorId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 11 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.musicId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 12 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.mysteryId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 13 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.romanceId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 14 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.scienceFictionId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 15 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.tvMovieId.stringValue, indexPath: indexPath)
-            
-        } else if indexPath.item == 16 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.thrillerId.stringValue, indexPath: indexPath)
-            
-        }  else if indexPath.item == 17 {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.warId.stringValue, indexPath: indexPath)
-            
-        } else {
-            
-            cell = showCell(collectionView: collectionView, reuseIdentifier: ResuseIdentifier.westernId.stringValue, indexPath: indexPath)
+        var cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.actionId.stringValue, indexPath: indexPath)
+        switch indexPath.item {
+        case 0: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.actionId.stringValue, indexPath: indexPath)
+        case 1: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.adventureId.stringValue, indexPath: indexPath)
+        case 2: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.animationId.stringValue, indexPath: indexPath)
+        case 3: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.comedyId.stringValue, indexPath: indexPath)
+        case 4: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.crimeId.stringValue, indexPath: indexPath)
+        case 5: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.documentaryId.stringValue, indexPath: indexPath)
+        case 6: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.dramaId.stringValue, indexPath: indexPath)
+        case 7: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.familyId.stringValue, indexPath: indexPath)
+        case 8: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.fantasyId.stringValue, indexPath: indexPath)
+        case 9: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.historyId.stringValue, indexPath: indexPath)
+        case 10: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.horrorId.stringValue, indexPath: indexPath)
+        case 11: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.musicId.stringValue, indexPath: indexPath)
+        case 12: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.mysteryId.stringValue, indexPath: indexPath)
+        case 13: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.romanceId.stringValue, indexPath: indexPath)
+        case 14: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.scienceFictionId.stringValue, indexPath: indexPath)
+        case 15: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.tvMovieId.stringValue, indexPath: indexPath)
+        case 16: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.thrillerId.stringValue, indexPath: indexPath)
+        case 17: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.warId.stringValue, indexPath: indexPath)
+        default: cell = showCell(collectionView: collectionView, reuseIdentifier: ReuseIdentifier.westernId.stringValue, indexPath: indexPath)
         }
         
         return cell

@@ -54,10 +54,10 @@ class FeaturedViewController: UITableViewController {
     }
     
     func fetchMovies() {
-        Service.sharedInstance.fetchMovies { [unowned self] results in
+        Service.sharedInstance.fetchMovies { [weak self] results in
             DispatchQueue.main.async {
-                self.movies = results
-                self.tableView.reloadData()
+                self?.movies = results
+                self?.tableView.reloadData()
             }
         }
     }
@@ -93,20 +93,17 @@ extension FeaturedViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0 {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: ReuseIdentifier.movieId.stringValue, for: indexPath) as! FeaturedViewCell
+        guard var cell = tableView.dequeueReusableCell(withIdentifier: ReuseIdentifier.movieId.stringValue, for: indexPath) as? FeaturedViewCell else { return UITableViewCell() }
+        switch indexPath.section {
+        case 0:
+             cell = tableView.dequeueReusableCell(withIdentifier: ReuseIdentifier.movieId.stringValue, for: indexPath) as! FeaturedViewCell
             cell.set(cell.collectionView, by: self)
-            
-            return cell
-            
-        } else {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: ReuseIdentifier.tvId.stringValue, for: indexPath) as! FeaturedViewCell
+        default:
+             cell = tableView.dequeueReusableCell(withIdentifier: ReuseIdentifier.tvId.stringValue, for: indexPath) as! FeaturedViewCell
             cell.set(cell.tvCollectionView, by: self)
-            
-            return cell
         }
+        
+        return cell
     }
 }
 
@@ -120,30 +117,27 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView.tag == 0 {
-            
+        switch collectionView.tag {
+        case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.movieCVId.stringValue, for: indexPath) as! MovieCell
             
             guard let movie = movies?[indexPath.item] else { return UICollectionViewCell() }
             cell.movie = movie
-            
             return cell
             
-        } else {
-            
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.tvCVId.stringValue, for: indexPath) as! TvCell
+        default:
+             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.tvCVId.stringValue, for: indexPath) as! TvCell
             
             guard let serie = series?[indexPath.item] else { return UICollectionViewCell() }
             cell.serie = serie
-            
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if collectionView.tag == 0 {
-            
+        switch collectionView.tag {
+        case 0:
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let detailsViewController = storyBoard.instantiateViewController(identifier: "details") as! DetailsViewController
             
@@ -151,6 +145,8 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewData
             Client.movieId = movie.id ?? 0
             
             self.navigationController?.pushViewController(detailsViewController, animated: true)
+        default:
+            return
         }
     }
     

@@ -62,16 +62,16 @@ extension DetailsViewController {
     }
     
     func getMovieGenre() {
-        Genres.shared.fetchGenres { [unowned self] genres in
+        Genres.shared.fetchGenres { [weak self] genres in
             genres.forEach { genre in
                 Client.movieDetails?.genres.forEach({ movieGenre in
                     if movieGenre.id == genre.id {
                         DispatchQueue.main.async {
                             guard let movieGenreName = movieGenre.name else { return }
-                            self.movieGenreNames.append(movieGenreName)
+                            self?.movieGenreNames.append(movieGenreName)
                             
-                            let genreNameWithPipe = self.movieGenreNames.map{$0}.joined(separator: " | ")
-                            self.movieGenreLabel.text = genreNameWithPipe
+                            let genreNameWithPipe = self?.movieGenreNames.map{$0}.joined(separator: " | ")
+                            self?.movieGenreLabel.text = genreNameWithPipe
                         }
                     }
                 })

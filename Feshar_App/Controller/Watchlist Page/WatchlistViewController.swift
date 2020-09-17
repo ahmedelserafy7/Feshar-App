@@ -56,11 +56,11 @@ class WatchlistViewController: UIViewController {
     }
     
     func getMoviesWatchlist() {
-        Watchlist.shared.getWatchlistDetails { [unowned self] movies in
-            self.watchlists = movies.reversed()
+        Watchlist.shared.getWatchlistDetails { [weak self] movies in
+            self?.watchlists = movies.reversed()
             DispatchQueue.main.async {
-                self.tableView.refreshControl?.endRefreshing()
-                self.tableView.reloadData()
+                self?.tableView.refreshControl?.endRefreshing()
+                self?.tableView.reloadData()
             }
         }
     }

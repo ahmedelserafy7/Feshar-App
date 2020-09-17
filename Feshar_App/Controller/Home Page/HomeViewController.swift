@@ -52,10 +52,10 @@ class HomeViewController: UIViewController {
     }
     
     func getGenres() {
-        Genres.shared.fetchGenres { [unowned self] genres in
-            self.genres = genres
+        Genres.shared.fetchGenres { [weak self] genres in
+            self?.genres = genres
             DispatchQueue.main.async {
-                self.collectionView.reloadData()
+                self?.collectionView.reloadData()
             }
         }
     }

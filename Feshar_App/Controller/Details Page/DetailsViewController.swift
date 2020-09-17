@@ -49,12 +49,12 @@ class DetailsViewController: UIViewController {
     }
     
     func addedToWatchlistCheck() {
-        Watchlist.shared.getWatchlistDetails { [unowned self] movies in
+        Watchlist.shared.getWatchlistDetails { [weak self] movies in
             DispatchQueue.main.async {
-                self.setupShadow()
+                self?.setupShadow()
                 for movie in movies {
                     if movie.id! == Client.movieId {
-                        self.addedMovieToWatchlist()
+                        self?.addedMovieToWatchlist()
                     }
                 }
             }
@@ -81,10 +81,10 @@ class DetailsViewController: UIViewController {
     }
     
     func getCast() {
-        MovieCast.shared.fetchCast { [unowned self] cast in
+        MovieCast.shared.fetchCast { [weak self] cast in
             DispatchQueue.main.async {
-                self.cast = cast
-                self.collectionView.reloadData()
+                self?.cast = cast
+                self?.collectionView.reloadData()
             }
         }
     }
