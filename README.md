@@ -6,8 +6,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
     <img src="https://img.shields.io/badge/version-1.0-blue.svg" />
-    <img src="https://img.shields.io/badge/platforms-mac-brightgreen.svg?style=flat" alt="Mac"
-     />
+    <img src="https://img.shields.io/cocoapods/p/MyCocoapodsLibrary.svg?style=flat" alt="Platform" />
 </p>
 
 
